@@ -115,6 +115,7 @@ module "dpu_ui" {
   vpc_network_name            = module.common_infra.vpc_network_name
   vpc_network_id              = module.common_infra.vpc_network_id
   gcs_object_store            = module.common_infra.gcs_process_bucket_name
+  webui_support_email         = var.webui_support_email
 }
 
 # Depends on: input bucket, artefactory (registury_url), and docprocessor service account

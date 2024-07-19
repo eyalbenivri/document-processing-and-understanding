@@ -41,3 +41,8 @@ variable "deploy_ui" {
   description = "Toggler for the Web-UI module"
   type        = bool
 }
+
+variable "webui_support_email" {
+  description = "Support email to attach to the IAP for the Web-UI module"
+  type        = string
+}
