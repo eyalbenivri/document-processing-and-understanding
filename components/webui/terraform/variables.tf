@@ -70,4 +70,7 @@ variable "gcs_object_store" {
   description = "GCS bucket for objects viewed through webui"
 }
 
-
+variable "webui_support_email" {
+  description = "Support email to attach to the IAP for the Web-UI module"
+  type        = string
+}

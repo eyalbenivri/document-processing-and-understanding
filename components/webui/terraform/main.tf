@@ -59,7 +59,7 @@ data "google_project" "project" {
 # Brand (which web users will see)
 resource "google_iap_brand" "project_brand" {
   project           = data.google_project.project.number
-  support_email     = var.iap_admin_account
+  support_email     = var.webui_support_email
   application_title = var.application_title
 }
 
